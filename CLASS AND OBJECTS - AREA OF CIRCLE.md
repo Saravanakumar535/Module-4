@@ -1,43 +1,36 @@
-# Exp.No:19  
-## CLASS AND OBJECTS - AREA OF CIRCLE
+# Experiment No: 4a Create Dictionary of Squares
+
+## AIM  
+To write a Python program that creates a dictionary with integers from 1 to `n` as keys and their squares as values.
 
 ---
 
-### AIM  
-To write a Python program to take the radius from the user and find the area of a circle using the class name `umbrella` and function name `rain`.
-
----
-
-### ALGORITHM
-
+### ALGORITHM  
 1. Begin the program.  
-2. Create a class named `umbrella`.  
-3. Define a method `rain(self, r)` inside the class `umbrella` that accepts a radius `r` as an argument.  
-4. Inside the `rain` method:  
-   - Calculate the area of a circle using the formula:  
-     \[ \text{Area} = \pi \times r^2 \]  
-   - Use the `math.pi` constant to get the value of π and perform the calculation.  
-   - Print the result, formatted to two decimal places.  
-5. Prompt the user for an integer input to represent the radius of the circle.  
-6. Create an instance of the `umbrella` class and store it in the variable `u`.  
-7. Call the `rain` method of the `umbrella` class, passing the user-provided radius `r` as an argument.  
+2. Define a function `create_square_dict(n)` that uses dictionary comprehension.  
+3. Use a `for` loop with `range(1, n+1)` to generate keys.  
+4. Assign each key’s value as its square.  
+5. Return the dictionary.  
+6. Read integer `n` from the user.  
+7. Call the function with `n` and print the returned dictionary.  
 8. Terminate the program.
 
 ---
 
-### PROGRAM
+### 🧾 PROGRAM
 
-```
+```python
+def create_square_dict(n):
+    return {i: i**2 for i in range(1, n+1)}
 
-
+n = int(input())
+result = create_square_dict(n)
+print(result)
 
 ```
 
 ### OUTPUT
-
-
+![image](https://github.com/user-attachments/assets/e26eac2e-6b19-4969-976b-15d49dee3e46)
 
 ### RESULT
-
-
-
+Thus, the Python program that creates a dictionary of squares from 1 to n has been implemented and executed successfully.
